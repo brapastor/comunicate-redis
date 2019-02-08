@@ -25,6 +25,7 @@ type Client struct{
 	websocket *websocket.Conn
 }
 
+
 var Clients = make(map[int]Client)
 
 func ConnectNewClient(request_chanel chan Request)  {
